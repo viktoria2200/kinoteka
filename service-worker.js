@@ -1,14 +1,13 @@
-const CACHE_NAME = 'kinoteka-cache-v4';
+const CACHE_NAME = 'kinoteka-cache-v6'; // Новая версия!
 const urlsToCache = [
-  '/kinoteka/',
-  '/kinoteka/index.html',
-  '/kinoteka/film.html',
-  '/kinoteka/serial.html',
-  '/kinoteka/stil.css',
-  '/kinoteka/manifest.json',
-  '/kinoteka/icons/icon-192x192.png',
-  '/kinoteka/icons/icon-512x512.png',
-  'https://aif-s3.aif.ru/images/025/364/a9a0f1974d40b12e43789b6327ba148d.jpg'
+  './',
+  './index.html',
+  './film.html',
+  './serial.html',
+  './stil.css',
+  './manifest.json',
+  './icons/icon-192x192.png',
+  './icons/icon-512x512.png'
 ];
 
 self.addEventListener('install', event => {
