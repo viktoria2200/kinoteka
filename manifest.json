@@ -1,12 +1,12 @@
 {
   "name": "Кинотека Абатуровой",
   "short_name": "Кинотека",
-  "description": "Подборка лучших фильмов и сериалов",
+  "description": "Подборка фильмов и сериалов",
   "start_url": "./index.html",
   "display": "standalone",
+  "display_override": ["window-controls-overlay"],
   "background_color": "#f4f4f4",
   "theme_color": "#5a4a4f",
-  "orientation": "any",
   "icons": [
     {
       "src": "./icons/icon-192x192.png",
@@ -18,11 +18,10 @@
       "src": "./icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable any"
     }
   ],
   "launch_handler": {
-    "client_mode": "auto"
-  },
-  "id": "/kinoteka/"
+    "client_mode": "focus-existing"
+  }
 }
