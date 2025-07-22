@@ -1,8 +1,22 @@
+/* Для window-controls-overlay */
+:root {
+  --titlebar-height: env(titlebar-area-height, 33px);
+}
+.titlebar-area {
+  position: fixed;
+  top: 0;
+  left: env(titlebar-area-x, 0);
+  width: env(titlebar-area-width, 100%);
+  height: var(--titlebar-height);
+  -webkit-app-region: drag;
+  app-region: drag;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
+    padding-top: var(--titlebar-height);
 }
 
 header {
