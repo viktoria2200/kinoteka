@@ -1,14 +1,13 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-<title>Абатурова АИ-24-02</title>
-<link rel="stylesheet" type="text/css" href="stil.css">
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#5a4a4f">
-
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы | Кинотека</title>
+    <link rel="stylesheet" href="./stil.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#5a4a4f">
 </head>
-
 <body>
 	<header>
 		<img src="https://aif-s3.aif.ru/images/025/364/a9a0f1974d40b12e43789b6327ba148d.jpg" width="310" align="left">
@@ -34,15 +33,13 @@
 <img src="https://cdn-obyavleniya.kaspi.kz/webp/f0/f0650287-388f-4790-a2e1-1accacf80d08/2-336x0.jpg" width="220" align="left">
 Пошли друзья в баню попариться, по традиции смыть с себя все плохое, чтобы встретить Новый Год чистыми, а «напарились» до такой степени, что отправили в Ленинград не того.
 	</div>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./service-worker.js')
-        .then(reg => console.log('SW registered', reg))
-        .catch(err => console.log('SW registration failed', err));
-    });
-  }
-</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
 </body>
+</html>
 
-</html> 
