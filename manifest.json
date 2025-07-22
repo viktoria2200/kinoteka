@@ -2,7 +2,7 @@
   "name": "Кинотека Абатуровой",
   "short_name": "Кинотека",
   "description": "Подборка лучших фильмов и сериалов",
-  "start_url": "/kinoteka/main.html",
+  "start_url": "/kinoteka/index.html",
   "display": "standalone",
   "background_color": "#f4f4f4",
   "theme_color": "#5a4a4f",
