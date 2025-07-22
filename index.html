@@ -10,23 +10,30 @@
 </head>
 <body>
     <header>
-        <img src="https://aif-s3.aif.ru/images/025/364/a9a0f1974d40b12e43789b6327ba148d.jpg" width="310" alt="Логотип">
-        <h1>Подборка фильмов и сериалов</h1>
+        <img src="https://aif-s3.aif.ru/images/025/364/a9a0f1974d40b12e43789b6327ba148d.jpg" 
+             width="310" 
+             alt="Логотип кинотеки"
+             class="logo">
+        <h1 class="title">Подборка фильмов и сериалов</h1>
     </header>
     
-    <div id="content">
-        <!-- Ваш контент -->
-    </div>
+    <main id="content">  <!-- Изменил div на main для семантики -->
+        <section class="intro">
+            <p>Фильмы и сериалы важны, поскольку они являются формой искусства, 
+            которая предоставляет нам возможность развлечения, образования, 
+            сопереживания и самопознания.</p>
+            
+            <p>Поэтому мы сделали для вас небольшой сборник фильмов и сериалов, 
+            которые точно стоит посмотреть!</p>
+        </section>
+    </main>
 
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./service-worker.js')
-                    .then(reg => {
-                        console.log('ServiceWorker зарегистрирован', reg);
-                        reg.update();
-                    })
-                    .catch(err => console.log('Ошибка регистрации:', err));
+                    .then(reg => console.log('SW registered'))
+                    .catch(err => console.error('SW error:', err));
             });
         }
     </script>
