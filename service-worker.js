@@ -36,3 +36,15 @@ self.addEventListener('fetch', event => {
       .then(response => response || fetch(event.request))
   );
 });
+self.addEventListener('install', event => {
+  console.log('Installing SW...');
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => {
+        console.log('Caching files');
+        return cache.addAll(urlsToCache);
+      })
+      .then(() => console.log('All files cached'))
+      .catch(err => console.error('Caching failed:', err))
+  );
+});
